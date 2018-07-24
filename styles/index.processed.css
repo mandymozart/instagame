@@ -1,0 +1,51 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.section__meta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background: white;
+}
+
+.insta-grid {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.insta-grid .item {
+  flex: 0 0 calc(100vw /4);
+}
+
+.insta-grid .item img {
+  width: 100%;
+}
+
+.section__error-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  right: 0;
+  height: 60px;
+  background: red;
+  transform: translateY(80px);
+  transition: transform .5s ease-in;
+}
+.has-error .section__error-message {
+  transform: translateY(0);
+}
+.user-is-logged-in .login-button {
+  display: none !important;
+}

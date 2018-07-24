@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>Login Landing Page</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.processed.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+  </head>
+  <body>
+
+    <!-- Meta Section is to control login and parameters of the grid. (A GUI so to speak) -->
+    <section class="section__meta">
+      <!-- Display login status -->
+      <div id="status"></div>
+
+      <!-- Instagram login or logout button -->
+      <a class="ui animated button login-button" tabindex="0"
+        href="javascript:void(0)" onclick="instagramLogin();">
+        <div class="visible content">Login</div>
+        <div class="hidden content">
+          <i class="right arrow icon"></i>
+        </div>
+      </a>
+
+      <!-- Display user profile data -->
+      <div id="userData"></div>
+    </section>
+
+    <!-- Display the actual grid -->
+    <section class="insta-grid" id="instaGrid">
+      No images loaded, yet. Loading ... please wait or login.
+    </section>
+
+
+    <section class="section__error-message" id="errorMessage">
+
+    </section>
+
+    <!-- Scripts -->
+    <!-- libraries first // Be aware of order -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script src="scripts/index.js"></script> <!-- Your own script go last -->
+  </body>
+</html>

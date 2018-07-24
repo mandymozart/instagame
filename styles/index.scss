@@ -1,0 +1,20 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+  margin:0;
+  padding: 0;
+}
+.insta-grid {
+  display: flex;
+  width: 100vw;
+  .item {
+    flex: 0 0 calc(100vw /4);
+    img {
+      width: 100%;
+    }
+  }
+}
