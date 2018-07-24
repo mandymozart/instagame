@@ -9,7 +9,7 @@
 
 
 // Config Object
-let env = (window.location.href.test(/localhost/g)) ? 'dev' : 'prod';
+let env = (/localhost/g.test(window.location.href)) ? 'dev' : 'prod';
 if(env == 'dev'){
     let config = {
         clientID: '3d468b4394274f1fbecdf079943d78b5',
