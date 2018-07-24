@@ -9,12 +9,22 @@
 
 
 // Config Object
-let config = {
-    clientID: '3d468b4394274f1fbecdf079943d78b5',
-    redirectUri: 'http://localhost/redirect.html',
-    refreshInterval: 10000,
-    tags: 'postsingularity'
-};
+let env = (window.location.href.test(/localhost/g)) ? 'dev' : 'prod';
+if(env == 'dev'){
+    let config = {
+        clientID: '3d468b4394274f1fbecdf079943d78b5',
+        redirectUri: 'http://localhost/redirect.html',
+        refreshInterval: 10000,
+        tags: 'postsingularity'
+    };
+} else {
+    let config = {
+        clientID: '3d468b4394274f1fbecdf079943d78b5',
+        redirectUri: 'http://instagame.wearepictures.com/redirect.html',
+        refreshInterval: 10000,
+        tags: 'postsingularity'
+    };
+}
 
 ///////////////////////
 // Methods           //
