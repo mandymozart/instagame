@@ -10,15 +10,16 @@
 
 // Config Object
 let env = (/localhost/g.test(window.location.href)) ? 'dev' : 'prod';
+let config = {};
 if(env == 'dev'){
-    let config = {
+    config = {
         clientID: '3d468b4394274f1fbecdf079943d78b5',
         redirectUri: 'http://localhost/redirect.html',
         refreshInterval: 10000,
         tags: 'postsingularity'
     };
 } else {
-    let config = {
+    config = {
         clientID: '3d468b4394274f1fbecdf079943d78b5',
         redirectUri: 'http://instagame.wearepictures.com/redirect.html',
         refreshInterval: 10000,
